@@ -1,19 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+
 <body>
     <nav></nav>
     <header></header>
     <main>
         <h1>Week 2</h1>
+        <h2>Notes</h2>
+        <h3>Comments</h3>
+        <p>
+            Single line comments start with // and finish at the end of the line: <br>
+            <span style="color: green;">// this is a short comment</span> <br>
+
+            Multiline comments start with /* and finish with */:<br>
+            <span style="color: green;">/* This is a longer comment anything
+                here will be ignored This is a useful place to put notes *</span>
+        </p>
+        <h3>Syntax</h3>
+        <p>Semicolons are not required because of Automatic Semicolon Insertion (ASI).
+            It will try and place semicolons at the end of lines. However it can cause
+            errors, so its porbably best to be safe and add them. </p>
+
+        <p>Dot Notation<br>
+            name.length; -returns number of characters in a string<br>
+            <br>
+            Bracket Notation<br>
+            name['length']; -also returns the number of characters.</p>
+
+        <h3>Converting Strings to Numbers</h3>
+        <p>To covert a string into a number we can multiply a numerical string by 1, which will convert it into a number
+            because of type coercion:
+            answer = "5" * 1; = 5<br>
+            Yet another way to convert a string into a number is to use the Number function:
+            Number("23"); = 23</p>
+
+        <h3>Arrays</h3>
+        <p>arrays can be declared by typing just square brackets '[]'<br>
+            Items can be added to an array by doing; pizza[0] = pepperoni<br>
+            Items can be removed by doing; delete pizza[0];<br>
+            .shift and .unshift add and remove items from the bottom/front of the array<br>
+            join() method takes an array and makes them into a long string.</p>
+
+        <h3>Functions</h3>
+        <p>Functions are delcared using the key word function, then variable name, then parenthesis.<br>
+            Functions are first-class objects, they behave the same as any value. A function passed as and
+            argument is called a callback.</p>
     </main>
     <footer>
         &copy; 2020 | Portfolio | Cameron McCleve
     </footer>
 </body>
+
 </html>
