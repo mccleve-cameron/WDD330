@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,30 +8,57 @@
     <title>Document</title>
     <link rel="stylesheet" href="week3.css">
 </head>
+
 <body>
     <nav></nav>
     <header></header>
     <main>
         <h1>Week 3</h1>
         <h2>Notes</h2>
+        <h3>Objects</h3>
         <ul>
             <li>A function that is the property of an object is called its method.</li>
-            <li>When a method needs to access information inside an object the 
+            <li>When a method needs to access information inside an object the
                 keyword 'this' is used. It goes before the dot: this.name.
             </li>
-            <li>An object literal is an object that is created directly in the 
+            <li>An object literal is an object that is created directly in the
                 language by wrapping all its properties and methods in curly braces {}.</li>
-        <li>JSON=JavaScript Object Notation is a data storage that serializes
-            and configures data. It is represented with a string.
-        </li>
-        <li>The parse method can be used to convert from JSON to a JavaScriptobject, and 
-            stringify does the opposite.
-        </li>
-        <li>Everything on a webpage is represented by a node.</li>
-            </ul>
+            <li>JSON=JavaScript Object Notation is a data storage that serializes
+                and configures data. It is represented with a string.
+            </li>
+            <li>The parse method can be used to convert from JSON to a JavaScriptobject, and
+                stringify does the opposite.
+            </li>
+        </ul>
+        <h3>DOM (Document Object Model)</h3>
+        <ul>
+            <li>Everything on a webpage is represented by a node. The DOM (Document Object Model)
+                is a network of connected nodes that form a tree.
+            </li>
+            <li>There are mutiple ways to access elements.
+                <ol>
+                    <li>document.getElementById()</li>
+                    <li>document.getElementsByTagName()</li>
+                    <li>document.getElementsByClassName()</li>
+                    <li>document.querySelector()</li>
+                    <li>document.querySelectorAll()</li>
+                </ol>
+            </li>
+        </ul>
+        <h2>Code Examples</h2>
+        <section id="parent">
+            <p>child 1, </p>
+            <p>child 2, </p>
+            <p>child 3, </p>
+            <p>child 4, </p>
+        </section>
+        <p>The above children are each inside a 'p' tag,
+             code runs in JavaScript and displays the childNodes to the console.</p>
     </main>
     <footer>
         &copy; 2020 | Portfolio | Cameron McCleve
     </footer>
+    <script src="week3.js"></script>
 </body>
+
 </html>
