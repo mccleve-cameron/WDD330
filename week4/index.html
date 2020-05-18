@@ -1,19 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="week4.css">
 </head>
+
 <body>
     <nav></nav>
-    <header></header>
-    <main>
+    <header class="softRed">
         <h1>Week 4</h1>
+    </header>
+    <main>
+        <h2>Notes</h2>
+<p>This week I didnt take many notes. I spent most of the time working on 
+    form validation in JavaScript. That code is shown in the example below.
+</p>
+
+<h2>Code Example</h2>
+        <form name="valid_form">
+            <h2>Fill out this Form</h2>
+
+            <div><input type="text" min="1" name="firstName" placeholder="First Name" required></div>
+
+            <div><input type="text" name="lastName" placeholder="Last Name" required></div>
+
+            <div><input type="text" name="address" placeholder="Address" required></div>
+
+            <div><input type="text" name="phoneNum" id="phone" placeholder="Phone# XXX-XXX-XXXX"
+                    onchange="phoneValidate()"><span id="phoneError" class="error" required></span></div>
+
+            <h3>Card Type: </h3>
+
+            <section>
+            <div class="radio">
+                <input type="radio" name="cct">MasterCard</input>
+            </div>
+            <div class="radio">
+                <input type="radio" name="cct">Visa</input>
+            </div>
+            <div class="radio">
+                <input type="radio" name="cct">AmericanExpress</input>
+            </div>
+        </section>
+
+            <h3>Card Number:</h3>
+            <div><input type="text" name="ccn" placeholder="0000 0000 0000 0000" onchange="cardValidate()"
+                    required><span id="cardError" class="error"></span></div>
+
+
+            <h3>Expiration Date:</h3>
+            <div><input type="text" name="expiration" placeholder="mm/yy" onchange="expirationValidate()" required><span
+                    id="expirationError" class="error"></span></div>
+
+            <div class="buttons">
+                <input class="softRed" type="reset" value="Reset">
+                <input class="softRed" type="submit" onsubmit="validate()" value="Submit">
+            </div>
+
+        </form>
     </main>
-    <footer>
+    <footer class="softRed">
         &copy; 2020 | Portfolio | Cameron McCleve
     </footer>
+    <script src="week4.js"></script>
 </body>
+
 </html>
