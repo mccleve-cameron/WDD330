@@ -1,0 +1,57 @@
+body {
+    text-align: center;
+    height: 100%;
+}
+
+li {
+    border: .5px solid;
+    padding: 5px;
+    text-align: left;
+    margin-bottom: 1px;
+    margin-left: -40px;
+
+}
+
+input {
+    flex: 5;
+}
+
+#wrapper {
+    
+}
+
+.row {
+
+}
+
+.box {
+    border: .5px solid;
+}
+
+.input {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    margin-top: 100px;
+    position: sticky ;
+}
+
+#nav {
+    border: .5px solid;
+    width: 299px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-top: -15px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#list {
+    list-style-type: none;
+    width: 260px;
+    margin-left: auto;
+    margin-right: auto;
+}

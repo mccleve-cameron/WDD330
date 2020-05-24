@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+<header>
+    <h1>Todos</h1>
+</header>
+
+<body>
+    <div id="wrapper">
+        <ul id="list">
+            <li><input type="checkbox">one</li>
+            <li><input type="checkbox">two</li>
+            <li><input type="checkbox">three</li>
+        </ul>
+
+        <div id="nav">
+            <button>All</button>
+            <button>Active</button>
+            <button>Completed</button>
+        </div>
+
+        <div class="input">
+            <input type="text" id="userInput">
+            <button id="add">ADD</button>
+        </div>
+    </div>
+    <footer>sticky</footer>
+    <script>
+        document.querySelector("#add").addEventListener('click', addTask);
+
+        function addTask() {
+            const task = document.getElementById('userInput').value;
+            if (task != "") {
+                document.querySelector('ul').innerHTML +=
+                    `<li><input type="checkbox">${task}</li>`;
+                console.log('adding a task');
+                document.getElementById('userInput').value = "";
+            } else {
+                console.log("must input a task");
+            }
+        }
+    </script>
+</body>
+
+
+</html>

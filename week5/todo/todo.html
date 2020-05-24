@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+<header>
+    <h1>Todos</h1>
+</header>
+
+<body>
+    <ul id="list">
+        <li><input type="checkbox"> one</li>
+        <li><input type="checkbox">two</li>
+        <li><input type="checkbox">three</li>
+    </ul>
+
+    <div id="nav">
+        <button>All</button>
+        <button>Active</button>
+        <button>Completed</button>
+    </div>
+
+    <div class="input">
+        <input type="text" id="userInput">
+        <button onclick="showInput()">ADD</button>
+    </div>
+    <script>
+        const test = "new task";
+
+        function showInput() {
+            const task = document.getElementById('userInput').value;
+            const ul = document.getElementById("list");
+            const text = `<li><input type="checkbox"></li>`
+            const li = document.createElement(text);
+            console.log(task);
+            li.appendChild(document.createTextNode(task));
+            ul.appendChild(li);
+            document.getElementById('userInput').value = "";
+        }
+    </script>
+</body>
+<footer>sticky</footer>
+
+</html>

@@ -4,9 +4,9 @@ const player1 = 'X';
 const player2 = 'O';
 let player = player1;
 
-function addPiece(e) {
-    console.log(e.target);
-    e.target.innerHTML = player;
+function addPiece(event) {
+    console.log(event.target);
+    event.target.innerHTML = player;
     if (player === player1) player = player2;
     else player = player1;
 }
