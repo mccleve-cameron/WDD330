@@ -1,57 +1,109 @@
+header {
+    background-image: url("header.png");
+    background-size: 120%;   
+padding: 10px;
+}
+
 body {
     text-align: center;
-    height: 100%;
 }
 
 li {
-    border: .5px solid;
-    padding: 5px;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    
     text-align: left;
     margin-bottom: 1px;
     margin-left: -40px;
-
+    display: flex;
+    justify-content: space-evenly;
 }
 
-input {
+i, span {
+    margin-top: auto;
+    margin-bottom: auto;
+
+    padding: 5px;
+}
+
+article {
+
+    padding-top: 3px;
     flex: 5;
 }
 
-#wrapper {
-    
+.linethru {
+    text-decoration: line-through;
+    opacity: .5;
 }
 
-.row {
-
+.circle {
+    background-image: url("unCheck.png");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: 70%;
+    height: 15px;
+    width: 15px;
 }
 
-.box {
-    border: .5px solid;
+.checked {
+    background-image: url("check.png");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: 70%;
+    height: 15px;
+    width: 15px;
+}
+
+.trash {
+    background-image: url("trash.png");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: 60%;
+    height: 15px;
+    width: 15px;
+}
+
+.add {
+    background-image: url("add.png");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: 100%;
+    height: 30px;
+    width: 30px;
+}
+
+#userInput {
+    flex: 5;
 }
 
 .input {
-    width: 300px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     margin-top: 100px;
-    position: sticky ;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: whitesmoke;
 }
 
 #nav {
     border: .5px solid;
-    width: 299px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding-top: 3px;
     padding-bottom: 3px;
-    margin-top: -15px;
+    margin-bottom: -15px;
     display: flex;
     justify-content: space-evenly;
 }
 
 #list {
     list-style-type: none;
-    width: 260px;
+    width: 90%;
+    max-width: 321px;
     margin-left: auto;
     margin-right: auto;
 }

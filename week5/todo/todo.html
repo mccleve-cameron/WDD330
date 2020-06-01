@@ -4,45 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ToDo</title>
     <link rel="stylesheet" href="todo.css">
 </head>
 <header>
-    <h1>Todos</h1>
+    <h1></h1>
 </header>
 
 <body>
-    <ul id="list">
-        <li><input type="checkbox"> one</li>
-        <li><input type="checkbox">two</li>
-        <li><input type="checkbox">three</li>
-    </ul>
+    <div id="wrapper">
+        
+        <div id="nav">
+            <button id="allTasks">All</button>
+            <button id="active">Active</button>
+            <button id="completed">Completed</button>
+        </div>
+        <ul id="list">
 
-    <div id="nav">
-        <button>All</button>
-        <button>Active</button>
-        <button>Completed</button>
+        </ul>
+
+
+        <div class="input">
+            <input type="text" id="userInput" placeholder="Add task">
+            <span id="add" class="add" style="font-size: 30pt;"></span>
+        </div>
     </div>
 
-    <div class="input">
-        <input type="text" id="userInput">
-        <button onclick="showInput()">ADD</button>
-    </div>
-    <script>
-        const test = "new task";
-
-        function showInput() {
-            const task = document.getElementById('userInput').value;
-            const ul = document.getElementById("list");
-            const text = `<li><input type="checkbox"></li>`
-            const li = document.createElement(text);
-            console.log(task);
-            li.appendChild(document.createTextNode(task));
-            ul.appendChild(li);
-            document.getElementById('userInput').value = "";
-        }
-    </script>
+    <script src="todo.js" type="module"></script>
 </body>
-<footer>sticky</footer>
+
 
 </html>

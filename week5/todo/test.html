@@ -4,48 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
+    <title>ToDo</title>
     <link rel="stylesheet" href="todo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <header>
-    <h1>Todos</h1>
+    <h1></h1>
 </header>
 
 <body>
     <div id="wrapper">
+        
+        <div id="nav">
+            <button id="allTasks">All</button>
+            <button id="active">Active</button>
+            <button id="completed">Completed</button>
+        </div>
         <ul id="list">
-            <li><input type="checkbox">one</li>
-            <li><input type="checkbox">two</li>
-            <li><input type="checkbox">three</li>
+            <li>
+                <i class="circle"></i>
+                <article class="linethru">one</article>
+                <span class="de fa fa-trash-o"></span>
+            </li>
+            <li>
+                <i id="test" class="checked"></i>
+                <article>one</article>
+                <span class="de fa fa-trash-o"></span>
+            </li>
         </ul>
 
-        <div id="nav">
-            <button>All</button>
-            <button>Active</button>
-            <button>Completed</button>
-        </div>
 
         <div class="input">
-            <input type="text" id="userInput">
-            <button id="add">ADD</button>
+            <input type="text" id="userInput" placeholder="Add task">
+            <span id="add" class="fa fa-plus-square" style="font-size: 30pt;"></span>
         </div>
     </div>
     <footer>sticky</footer>
-    <script>
-        document.querySelector("#add").addEventListener('click', addTask);
+    <main></main>
 
-        function addTask() {
-            const task = document.getElementById('userInput').value;
-            if (task != "") {
-                document.querySelector('ul').innerHTML +=
-                    `<li><input type="checkbox">${task}</li>`;
-                console.log('adding a task');
-                document.getElementById('userInput').value = "";
-            } else {
-                console.log("must input a task");
-            }
-        }
-    </script>
+    <script src="todo.js" type="module"></script>
 </body>
 
 
