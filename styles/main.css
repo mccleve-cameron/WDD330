@@ -25,9 +25,58 @@ nav ul li a {
     color: floralwhite;
 }
 
+a {
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    margin: 30px;
+}
+
 /* class selectors */
 .open li{
     display: block;
 }
 
 /* id selectors */
+#translate {
+    border: 1px solid;
+    background-color: lightcoral;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+}
+#translate:hover {
+    transform: translate(45px, -45px);
+}
+
+#Rotate {
+    border: 1px solid;
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+}
+#Rotate:hover {
+    transform: rotate(10deg) translateX(40px) scale(1.5);
+}
+
+#scale {
+    border: 1px solid;
+    background-color:lavender;
+    height: 100px;
+    width: 100px;
+}
+#scale:hover {
+    transform: scale(1.5, 0.25);
+}
+
+#skew {
+    border: 1px solid;
+    background-color: plum;
+    height: 100px;
+    width: 100px;
+}
+#skew:hover {
+    transform: skew(15deg, 4deg);
+}

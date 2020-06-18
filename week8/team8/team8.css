@@ -1,0 +1,49 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+button {
+    height: 25px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+h1 {
+    margin: 2px;
+}
+
+h2 {
+    margin: 0px;
+    border: 1px solid black;
+}
+
+img {
+    width: 150px;
+}
+
+section {
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid black;
+}
+
+p {
+    font-weight: bolder;
+    margin: 1px;
+}
+
+.card {
+    margin: 10px;
+    text-align: center;
+    border-radius: 3px;
+    border: 1px solid black;
+    background-image: -webkit-gradient(linear,
+                left bottom,
+                left top,
+                color-stop(0, rgb(224, 224, 224)),
+                color-stop(1, rgb(255, 255, 255)));
+    box-shadow: 0 3px 10px 0 rgba(255, 255, 255, 0.2), 
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
