@@ -1,0 +1,14 @@
+.title {
+    color: blue;
+    text-align: center;
+    margin: 50px;
+}
+
+main {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+button {
+ width: 100%;
+}

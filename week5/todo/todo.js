@@ -10,6 +10,7 @@ const CHECK = "checked";
 const UNCHECK = "circle";
 const lineThru = "linethru";
 
+console.log(today);
 document.querySelector('h1').innerHTML = today.toLocaleDateString("en-US", style);
 document.querySelector('#add').addEventListener('click', addTask);
 document.querySelector('#add').addEventListener('keyUp', addTask);
